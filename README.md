@@ -23,11 +23,11 @@
 ID
 PO (Purchase Order)
 Reference (GI Ref)
-Product
+Fish Product (fish_id)
 Price
 Kgs
 Shipment Date
-Importer(Buyer)
+Importer(Buyer) ()
 Supplier(Seller)
 Sizes
 
