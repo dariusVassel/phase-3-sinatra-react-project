@@ -22,7 +22,6 @@
 
 ID
 PO (Purchase Order)
-Reference (GI Ref)
 Fish Product (fish_id)
 Price
 Kgs
@@ -39,6 +38,7 @@ Sizes
 ID
 Name
 Address
+Email
 
 - has_many :orders
 

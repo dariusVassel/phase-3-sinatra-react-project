@@ -10,15 +10,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_04_06_210857) do
+ActiveRecord::Schema.define(version: 2022_04_11_200218) do
+
+  create_table "importers", force: :cascade do |t|
+    t.string "name"
+    t.string "reference_person"
+    t.text "address"
+    t.string "email"
+    t.integer "mobile"
+  end
 
   create_table "orders", force: :cascade do |t|
     t.integer "PO"
     t.integer "quantity"
     t.integer "price"
-    t.integer "fish_id"
+    t.integer "product_id"
     t.integer "importer_id"
     t.integer "date"
+    t.string "specification"
+  end
+
+  create_table "products", force: :cascade do |t|
+    t.string "name"
+    t.string "type"
+    t.text "description"
+    t.string "specification"
   end
 
 end
