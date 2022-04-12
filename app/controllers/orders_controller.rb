@@ -37,17 +37,5 @@ class OrdersController < ApplicationController
         order.destroy
         order.to_json
     end
-
-    # private
-    #     def find_order
-    #         @importer = Importer.find_by_id(params[:id])
-    #         @order = @importer.orders.build(params[:order])
-
-    #         if @order.save
-    #             @order.to_json(include: [importer]) 
-    #         else
-    #             {errors: @order.errors.full_messages}.to_json
-    #         end
-    #     end
     
 end
