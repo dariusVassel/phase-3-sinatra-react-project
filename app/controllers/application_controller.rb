@@ -6,4 +6,8 @@ class ApplicationController < Sinatra::Base
     { message: "Good luck with your project!" }.to_json
   end
 
+#   get '/importers/:id' do
+#     importer = Importer.find(params[:id])
+#     importer.to_json(include: [:orders])
+# end
 end

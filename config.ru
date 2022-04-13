@@ -13,4 +13,5 @@ use Rack::JSONBodyParser
 
 # Our application
 use OrdersController
+use ImportersController
 run ApplicationController
