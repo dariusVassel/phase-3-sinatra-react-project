@@ -31,7 +31,7 @@ class OrdersController < ApplicationController
         )
         order.to_json
     end
-
+    #Delete functionality
     delete '/orders/:id' do
         order = Order.find(params[:id])
         order.destroy
